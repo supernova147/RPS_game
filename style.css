@@ -2,3 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
+
+.main_content {
+    display: grid;
+    
+    grid-gap: 5rem;
+    row-gap: 5rem;
+}
