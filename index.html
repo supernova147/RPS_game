@@ -19,23 +19,25 @@ May add background (maybe moving background as an extra thing
     <main class="main_content">       
 
         <div class="header_scoreboard">
-            <h4>Wins: </h4>
-            <h4>Losses: </h4>
-            <h4>Draws: </h4>
+            <h4>Wins:   <p id="wins_count">0</p></h4>
+            <h4>Losses: <p id="loss_count">0</p></h4>
+            <h4>Draws:  <p id="draw_count">0</p></h4>
+            <button class="reset_button" id="reset_count">Reset</button>
         </div>
         <!-- image will need to change. (or icons)-->
         <div class="computer_choice">
-            <img>
+            <img src="paper.png"><p></p>
         </div>
 
         <div class="user_choice">
-            <img>
+            <img src="rock.png"><p></p>
         </div>
 
         <div class="user_input">
             <form>
-                <label for="user_input--choice"></label>
+                <label for="user_input--choice">please enter your choice:</label>
                 <input type="text" id="user_input--ID" name="picked_choice">
+                <p>Remember, your choice can only be: "rock, paper, or scissors!"</p>
             </form>
         </div>
     </main>
