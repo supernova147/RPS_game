@@ -26,25 +26,30 @@ May add background (maybe moving background as an extra thing
         </div>
         <!-- image will need to change. (or icons)-->
         <div class="computer_choice">
-            <img src="paper.png"><p></p>
+            <img src="paper.png" id="comp_img">
         </div>
 
         <div class="user_choice">
-            <img src="rock.png"><p></p>
+            <img src="rock.png" id="user_img">
         </div>
 
-        <div class="user_input">
+        <!-- <div class="user_input">
             <form>
                 <label for="user_input--choice">please enter your choice:</label>
                 <input type="text" id="user_input--ID" name="picked_choice">
                 <p>Remember, your choice can only be: "rock, paper, or scissors!"</p>
-            </form>
+            </form> -->
+        <div class="user_input">
+            <button id="rock_button" onclick="rock_function()"><img src="rock.png"></button>
+            <button id="paper_button" onclick="paper_function()"><img src="paper.png"></button>
+            <button id="scissors_button" onclick="scissors_function()"><img src="scissors.png"></button>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 
 
 
-<footer>Copyright &copy; 2025 MyWebsite. All rights reserved.</footer>
+<footer>Copyright &copy; 2025 RPS. All rights reserved.</footer>
 
 </html>
