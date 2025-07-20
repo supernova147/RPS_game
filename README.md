@@ -1,0 +1,1 @@
+Hello, I'd like to request a 4 for this project. Besides the main functionality: I've included the optional challenges & included a feature regarding the player & computer's choices showing as changing images. Thank you.
