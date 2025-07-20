@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<!-- Should be 'user friendly and designed aesthetically pleasing
+<!-- If I put more time into this I would've been interested in adding these additional features:
+Should be 'user friendly and designed aesthetically pleasing
 May add background (maybe moving background as an extra thing 
-- confetti when W's? Tomatoes when L's? Tie is..? ?)-->
-
+- confetti when W's? Tomatoes when L's? Tie is..? ?) -->
 
 <body>
         <header class="header_title">
@@ -24,31 +24,31 @@ May add background (maybe moving background as an extra thing
             <h4>Draws:  <p id="draw_count">0</p></h4>
             <button class="reset_button" id="reset_count" onclick="reset()">Reset</button>
         </div>
-        <!-- image will need to change. (or icons)-->
+        <!-- image will need to change. (or icons) [EDIT]: added.-->
         <div class="computer_choice">
+            <p>Computer Chose: </p>
             <img src="paper.png" id="comp_img">
         </div>
 
         <div class="user_choice">
+            <p>You Chose: </p>
             <img src="rock.png" id="user_img">
         </div>
-
-        <!-- <div class="user_input">
+        
+        <!-- <div class="user_input">  Kept this in place; this was an old method I tried to do.
             <form>
                 <label for="user_input--choice">please enter your choice:</label>
                 <input type="text" id="user_input--ID" name="picked_choice">
                 <p>Remember, your choice can only be: "rock, paper, or scissors!"</p>
             </form> -->
-        <div class="user_input">
+        <div class="user_input"> 
             <button id="rock_button" onclick="rock_function()"><img src="rock.png"></button>
             <button id="paper_button" onclick="paper_function()"><img src="paper.png"></button>
             <button id="scissors_button" onclick="scissors_function()"><img src="scissors.png"></button>
         </div>
     </main>
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!--Connects javascript code to index!-->
 </body>
-
-
 
 <footer>Copyright &copy; 2025 RPS. All rights reserved.</footer>
 
