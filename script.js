@@ -43,7 +43,9 @@ function rock_function() {
             comp_img.src = 'rock.png';
             let user_img = document.getElementById('user_img');
             user_img.src = 'rock.png'; //since the users previous choice may be different - it's important that we still include changing the user's image to rock as well! even if its the same option as before.
-            alert("Its a tie!"); //alerts were also included! so that the user knows they either tie, win, or lost.
+            let game_output = document.getElementById('game_decision');
+            game_output.innerText = "It's a draw!";
+            
         }
         else if(comp_choice === 'paper') {  //Loss condition logic!
             loss_count += 1;
@@ -53,7 +55,8 @@ function rock_function() {
             comp_img.src = 'paper.png';
             let user_img = document.getElementById('user_img');
             user_img.src = 'rock.png';
-            alert("It's a loss!")
+            let game_output = document.getElementById('game_decision');
+            game_output.innerText = "It's a loss!";
         }
         else {  //Win condition logic! No need to specify the win condition as its the last available option. The check COULD be added but it is redundant.
             wins_count += 1;    
@@ -63,7 +66,8 @@ function rock_function() {
             comp_img.src = 'scissors.png';
             let user_img = document.getElementById('user_img');
             user_img.src = 'rock.png';
-            alert("It's a win!")
+            let game_output = document.getElementById('game_decision');
+            game_output.innerText = "It's a win!";
     }
 }
 
@@ -82,7 +86,8 @@ function paper_function() {
             comp_img.src = 'paper.png';
             let user_img = document.getElementById('user_img');
             user_img.src = 'paper.png';
-            alert("Its a tie!");
+            let game_output = document.getElementById('game_decision');
+            game_output.innerText = "It's a draw!";
         }
         else if(comp_choice === 'scissors') {
             loss_count += 1;
@@ -92,7 +97,8 @@ function paper_function() {
             comp_img.src = 'scissors.png';
             let user_img = document.getElementById('user_img');
             user_img.src = 'paper.png';
-            alert("It's a loss!")
+            let game_output = document.getElementById('game_decision');
+            game_output.innerText = "It's a loss!";
 
         }
         else {
@@ -103,7 +109,8 @@ function paper_function() {
             comp_img.src = 'rock.png';
             let user_img = document.getElementById('user_img');
             user_img.src = 'paper.png';
-            alert("It's a win!")
+            let game_output = document.getElementById('game_decision');
+            game_output.innerText = "It's a win!";
         }
 }
 
@@ -122,7 +129,8 @@ function scissors_function() {
             comp_img.src = 'scissors.png';
             let user_img = document.getElementById('user_img');
             user_img.src = 'scissors.png';
-            alert("Its a tie!");
+            let game_output = document.getElementById('game_decision');
+            game_output.innerText = "It's a draw!";
         }
         else if(comp_choice === 'rock') {
             loss_count += 1;
@@ -132,7 +140,8 @@ function scissors_function() {
             comp_img.src = 'rock.png';
             let user_img = document.getElementById('user_img');
             user_img.src = 'scissors.png';
-            alert("It's a loss!")
+            let game_output = document.getElementById('game_decision');
+            game_output.innerText = "It's a loss!";
         }
         else {
             wins_count += 1;
@@ -142,7 +151,8 @@ function scissors_function() {
             comp_img.src = 'paper.png';
             let user_img = document.getElementById('user_img');
             user_img.src = 'scissors.png';
-            alert("It's a win!")
+            let game_output = document.getElementById('game_decision');
+            game_output.innerText = "It's a win!";
         }
 }
 
@@ -158,5 +168,6 @@ function reset(){
     document.getElementById("draw_count").innerText = draw_count; //this showcase the updated count onto the web!
     document.getElementById("wins_count").innerText = wins_count;
     document.getElementById("loss_count").innerText = loss_count;
-    alert("Score cleared!"); //alerts that the score was cleared
+    let game_output = document.getElementById('game_decision');
+    game_output.innerText = "Score reset!";
 }

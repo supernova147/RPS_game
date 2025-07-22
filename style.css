@@ -48,7 +48,11 @@ img{
     align-self: center;
     margin: 10rem;
 }
-
+.game_decision {
+    display: flex;
+    position: absolute;
+    width: 50%;
+}
 .user_choice {
     align-items: center;
     align-self: center;
